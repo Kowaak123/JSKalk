@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var kolory = Array("czerwony","zielony","niebieski");
+kolory[0] = "zolty"
+for(var i = 0; i < 3;i++){
+    document.write("kolory["+ i +"] = " + kolory[i] + "<br />");
+}
+for(var indeks in kolory){
+    document.write("kolory["+ indeks +"] = " + kolory[indeks] + "<br />")
+}
+for(var indeks in kolory){
+    kolory(indeks) = null;
+    document.write("kolory["+ indeks +"] = " + kolory[indeks] + "<br />")
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>
